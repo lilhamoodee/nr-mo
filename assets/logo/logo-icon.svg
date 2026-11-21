@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="512" height="512" fill="none">
+  <defs>
+    <linearGradient id="bgGrad" x1="10" y1="8" x2="110" y2="112" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#F7F9FC"/>
+      <stop offset="55%" stop-color="#EBF2FA"/>
+      <stop offset="100%" stop-color="#DCE3EC"/>
+    </linearGradient>
+    <radialGradient id="auroraGlow" cx="76%" cy="22%" r="62%">
+      <stop offset="0%" stop-color="#A9CCF3" stop-opacity="0.72"/>
+      <stop offset="60%" stop-color="#A9CCF3" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#A9CCF3" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="stemLeft" x1="28" y1="90" x2="46" y2="26" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#243449" stop-opacity="0.92"/>
+      <stop offset="55%" stop-color="#4B729E" stop-opacity="0.78"/>
+      <stop offset="100%" stop-color="#A9CCF3" stop-opacity="0.88"/>
+    </linearGradient>
+    <linearGradient id="stemRight" x1="92" y1="30" x2="72" y2="94" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#243449" stop-opacity="0.92"/>
+      <stop offset="58%" stop-color="#5A83B0" stop-opacity="0.76"/>
+      <stop offset="100%" stop-color="#A9CCF3" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="diagRibbon" x1="32" y1="26" x2="88" y2="94" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.95"/>
+      <stop offset="35%" stop-color="#C8E0FA" stop-opacity="0.88"/>
+      <stop offset="72%" stop-color="#6B9AD0" stop-opacity="0.84"/>
+      <stop offset="100%" stop-color="#243449" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="ribbonSheen" x1="30" y1="24" x2="86" y2="90" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.95"/>
+      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#A9CCF3" stop-opacity="0.6"/>
+    </linearGradient>
+    <filter id="softShadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#243449" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+  <!-- Liquid glass app tile -->
+  <rect x="4" y="4" width="112" height="112" rx="28" fill="url(#bgGrad)"/>
+  <rect x="4" y="4" width="112" height="112" rx="28" fill="url(#auroraGlow)"/>
+  <rect x="4.75" y="4.75" width="110.5" height="110.5" rx="27.25" stroke="#FFFFFF" stroke-opacity="0.85" stroke-width="1.5"/>
+
+  <!-- Glass Ribbon N -->
+  <g filter="url(#softShadow)">
+    <!-- Left vertical curved ribbon -->
+    <path d="M33 88 V38 C33 28 45 25 51 33" stroke="url(#stemLeft)" stroke-width="14.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Right vertical curved ribbon -->
+    <path d="M87 32 V82 C87 92 75 95 69 87" stroke="url(#stemRight)" stroke-width="14.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Continuous diagonal connecting ribbon -->
+    <path d="M34 36 C37 26 48 26 53 35 L67 85 C72 94 83 94 86 84" stroke="url(#diagRibbon)" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Specular liquid glass highlight along ribbon crest -->
+    <path d="M35.5 34.5 C38.5 27.5 47 27.5 51.5 35.5 L66 83.5 C70 91 79 91.5 83.5 85" stroke="url(#ribbonSheen)" stroke-width="3.2" stroke-linecap="round"/>
+  </g>
+</svg>
