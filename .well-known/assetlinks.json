@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "io.github.lilhamoodee.nara",
+      "sha256_cert_fingerprints": [
+        "0E:BE:BD:6E:19:84:F1:D5:33:25:19:2F:91:32:AA:B6:8A:3D:82:0F:7A:D6:CC:41:67:D1:B0:92:A1:2B:45:1E"
+      ]
+    }
+  }
+]
